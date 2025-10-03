@@ -4,8 +4,9 @@
 require('dotenv').config(); 
 
 // Import validator and ingestion functions
-const { validateAndGetType } = require('./src/validator');
-const { saveScrapedData, pool } = require('./src/db_ingestion'); 
+const { validateAndGetType } = require('./Backend/src/validator');
+const { saveScrapedData, pool } = require('./Backend/src/db_ingestion'); 
+ 
 const axios = require('axios');
 const cheerio = require('cheerio');
 
